@@ -5,20 +5,23 @@ Library which runs .swf Flash files natively in Node.js. Inspired by Scaleform (
 I'm not sure what I want to do with this. I just felt like laying it out. Not entirely working on Mac OS X (issues with Cocoa/SDL). 
 
 ## Install:
+
 1) Download and install OpenGL (included in Xcode on Mac OS X).
 1) Download and install SDL into your compiler's global library directory (/usr/lib) - required for linking.
 On Mac OS X:
 brew install sdl
 brew install jpeg
 
-### 1
+### Method 1
+
 1) Go to the directory with flash library
 1) Execute `node-waf configure build`
 1) Get module from `./build/default/flash.node`
 
 Use `var flash = require("flash");`
 
-### 2 (works if node are installed in default path)
+### Method 2
+
 1) Go to the directory with flash library
 1) Execute `make`
 1) Execute `sudo make install`
@@ -55,6 +58,7 @@ Remove files:
 
 
 ## TODO
+
 1) Check cross-compatibility.
 1) Fix window bug on Mac OS X.
 1) Clean up dependencies.
