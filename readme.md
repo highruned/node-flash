@@ -4,7 +4,7 @@ Library which runs .swf Flash files natively in Node.js. Inspired by Scaleform (
 
 ## WIP
 
-I'm not sure what I want to do with this. I just felt like laying it out. Not entirely working on Mac OS X (issues with Cocoa/SDL). 
+I'm not sure what I want to do with this. I just felt like laying it out. Not entirely working, especially on Mac OS X (issues with Cocoa/SDL). 
 
 ## Install:
 
@@ -61,11 +61,9 @@ Remove files:
 
 ## TODO
 
-
+* Fix window bug (on Mac OS X).
 * Check cross-compatibility.
-* Fix window bug on Mac OS X.
 * Clean up dependencies.
-* Fix "leak" issue (ObjC wrapper) in Mac OS X.
 
 
 ## Credit
