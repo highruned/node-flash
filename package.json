@@ -1,0 +1,13 @@
+{
+  "name": "flash",
+  "author": "Eric Muyser",
+  "keywords": ["flash", "swf", "sdl", "opengl"],
+  "description": "Library which runs .swf Flash files natively.",
+  "version": "0.0.1",
+  "contributors": [ 
+  ],
+  "main" : "./lib/flash",
+  "directories": { "lib": "./build/default" },
+  "homepage": "http://eric.muyser.com",
+  "engines": { "node": ">= 0.4.7" }
+}
