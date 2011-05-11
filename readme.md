@@ -15,30 +15,23 @@ On Mac OS X:
 `brew install sdl`
 `brew install jpeg`
 
-### Method 1  
+1) Clone the repository
 1) Go to the directory with flash library  
 2) Execute `node-waf configure build`  
 3) Get module from `./build/default/flash.node`  
   
-Use `var flash = require("flash");`  
+From the repository directory, you can use `var flash = require("build/default/flash");`  
 
-### Method 2
-
-* Go to the directory with flash library
-* Execute `make`
-* Execute `sudo make install`
-
-You should use `var flash = require("flash");` (from any path)  
+You can then run `npm install .` and use `var flash = require("flash");` from any path.
 
 ## API
 ### Functions
 `flash.start(filename)` - Starts the interpreter.  
-`flash.run()` - Moves the interpreter forward. Must be loop, with for instance setTimeout.  
+`flash.run()` - Moves the interpreter forward. Must be looped, with for instance setTimeout.  
 `flash.stop()` - Stops the interpreter.  
 ### Classes
 `flash.window()`
 
-	
 ## Usage
 Please see the example in `test/window.js`  
 

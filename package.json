@@ -7,7 +7,7 @@
   "contributors": [ 
   ],
   "main" : "./lib/flash",
-  "directories": { "lib": "./build/default" },
+  "directories": {  },
   "homepage": "http://eric.muyser.com",
   "engines": { "node": ">= 0.4.7" }
 }
