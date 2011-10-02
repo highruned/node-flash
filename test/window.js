@@ -1,11 +1,12 @@
 var assert = require('assert');
-var flash = require("../bin/build/default/flash");
+var flash = require('../bin/build/Release/flash');
 
-var window = flash.start('/Users/eric/Dropbox/repo/node-flash/test/start.swf');
+var window = flash.start(__dirname + '/start.swf');
 
 var abc = function() {
 	flash.run();
-	setTimeout(abc, 1);
+	
+	setTimeout(abc, 1); // let's do it again
 };
 
 abc();

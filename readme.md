@@ -11,18 +11,22 @@ Warning: Not entirely working, especially on Mac OS X (issues with Cocoa/SDL). D
 
 1) Download and install OpenGL (included in Xcode on Mac OS X).  
 2) Download and install SDL into your compiler's global library directory (/usr/lib) - required for linking.  
-On Mac OS X:  
+On Mac OS X using Homebrew:  
 `brew install sdl`
 `brew install jpeg`
 
-1) Clone the repository
-1) Go to the directory with flash library  
-2) Execute `node-waf configure build`  
-3) Get module from `./build/default/flash.node`  
+1) Clone the repository.  
+2) Go to the directory with flash library.  
+3) Execute `node-waf configure build`.  
+4) Get module from `./build/default/flash.node`.  
   
 From the repository directory, you can use `var flash = require("build/default/flash");`  
 
 You can then run `npm install .` and use `var flash = require("flash");` from any path.
+
+## Status
+
+Compiled on Mac. Still converting the `gameswf` library. Currently stuck at spawning an OpenGL window. Trying on Linux.
 
 ## API
 ### Functions

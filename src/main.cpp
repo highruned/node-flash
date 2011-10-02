@@ -244,7 +244,7 @@ start(const v8::Arguments& args) {
 	v8::HandleScope scope;
 	v8::String::AsciiValue abc(args[0]->ToString());
 
-	/*
+	
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 16);
@@ -261,7 +261,7 @@ start(const v8::Arguments& args) {
 	SDL_WM_SetCaption("Flash", NULL);
 	
 	SDL_GL_SwapBuffers();
-	*/
+	
 	application ga;
 	ga.init();
 	
